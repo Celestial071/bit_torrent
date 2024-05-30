@@ -4,7 +4,7 @@
 
 
 int main() {
-    torrent_t *torrent = readTorrentfile("include/debian-edu-12.5.0-amd64-netinst.iso.torrent");
+    torrent_t *torrent = readTorrentfile("torrentfiles/debian-edu-12.5.0-amd64-netinst.iso.torrent");
     if(!torrent) fprintf(stderr, "Error With File reading\n");
     //printf("\n%s\nSize:-%zu\n", torrent->content, torrent->length);
     

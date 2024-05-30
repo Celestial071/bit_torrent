@@ -147,23 +147,18 @@ void displaybencode(ben_node *node){
         return ;
     switch((int)node->type){
         case BENCODE_STRING:
-            //TOKENIZE(BENCODE_STRING);
             printf("%s\n", node->val.s);
             break;
         case BENCODE_INT:
-            //TOKENIZE(BENCODE_INT);
             printf("%llu\n", node->val.i);
             break;
         case BENCODE_LIST:
-            //TOKENIZE(BENCODE_LIST);
             for(size_t i = 0; i < node->val.list.size; i++){
                 displaybencode(node->val.list.items[i]);
             }
             break;
         case BENCODE_DICT:
-            //TOKENIZE(BENCODE_DICT);
             for(size_t i = 0; i < node->val.dic.size; i++){
-                //TOKENIZE(BENCODE_STRING);
                 printf("%s \t", node->val.dic.pairs[i].key);
                 displaybencode(node->val.dic.pairs[i].val);
             }

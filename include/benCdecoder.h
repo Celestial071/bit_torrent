@@ -4,9 +4,6 @@
 #include "io.h"
 #include <stdbool.h>
 
-#define TOKENIZE(t) printf(#t "\t")
-#define MIN(x, y) (x>y)? (y):(x)
-
 typedef enum {
     BENCODE_INT,
     BENCODE_STRING,
