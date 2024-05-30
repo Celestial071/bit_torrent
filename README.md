@@ -1,3 +1,3 @@
 # bit_torrent
-My solo attemp at creating a bittorent client using C.
+My solo attempt at creating a bittorent client using C.
 computer network class project.
